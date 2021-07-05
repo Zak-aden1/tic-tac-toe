@@ -1,0 +1,102 @@
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #352f5b;
+    color: white;
+
+}
+
+
+
+.wrapper {
+    background-color: white;
+    width: 50vw;
+    height: 65vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;;
+    background: #352f5b;
+
+    div {
+        margin: 10px;
+        border-radius: 10px;
+
+        &:hover {
+            opacity: 0.8;
+            cursor: pointer;
+        }
+    }
+
+    .top {
+        background-color: grey;
+        text-align: center;
+        font-size: 30px
+    }
+    .mid {
+        background-color: grey;
+        text-align: center;
+        font-size: 30px
+    }
+    .bottom {
+        background-color: grey;
+        text-align: center;
+        font-size: 30px
+    }
+
+    .green {
+        background-color: green;
+    }
+
+    .blue {
+        background-color: blue;
+    }
+}
+
+
+
+.all {
+    // display: none;
+    text-align: center;
+    font-size: 30px;
+}
+
+button {
+    padding: 20px;
+    background-color: darkblue;
+    color: white;
+    border-radius: 10px;
+
+    &:hover {
+        cursor: pointer;
+        opacity: 0.8;
+    }
+}
+
+.cross {
+    background-color: green;
+}
+.circle {
+    background-color: blue;
+}
+
+.scores {
+    display: flex;
+    flex-direction: row;
+    // border: 2px solid black;
+    justify-content: space-between;
+    width: 700px;
+}
+
+.clock {
+    background-color: #444;
+    color: yellow;
+    font-size: 3em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.clock span {
+    padding: 20px;
+}
