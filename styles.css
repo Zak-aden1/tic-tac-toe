@@ -1,0 +1,89 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #352f5b;
+  color: white;
+}
+
+.wrapper {
+  background-color: white;
+  width: 50vw;
+  height: 65vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  background: #352f5b;
+}
+.wrapper div {
+  margin: 10px;
+  border-radius: 10px;
+}
+.wrapper div:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+.wrapper .top {
+  background-color: grey;
+  text-align: center;
+  font-size: 30px;
+}
+.wrapper .mid {
+  background-color: grey;
+  text-align: center;
+  font-size: 30px;
+}
+.wrapper .bottom {
+  background-color: grey;
+  text-align: center;
+  font-size: 30px;
+}
+.wrapper .green {
+  background-color: green;
+}
+.wrapper .blue {
+  background-color: blue;
+}
+
+.all {
+  text-align: center;
+  font-size: 30px;
+}
+
+button {
+  padding: 20px;
+  background-color: darkblue;
+  color: white;
+  border-radius: 10px;
+}
+button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.cross {
+  background-color: green;
+}
+
+.circle {
+  background-color: blue;
+}
+
+.scores {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 700px;
+}
+
+.clock {
+  background-color: #444;
+  color: yellow;
+  font-size: 3em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.clock span {
+  padding: 20px;
+}
