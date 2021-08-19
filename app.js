@@ -23,6 +23,7 @@ let scoreTwo = 1;
 let isGameOver = false
 
 // console.log(playerOne);
+console.log(all);
 
 // const condition = () => {
 
@@ -63,6 +64,9 @@ wrapper.addEventListener('click', (e, oneTime) => {
         winner.classList.add('cross')
         winner.innerText = 'Cross Wins!!'
         cross.innerHTML = `Cross Score: ${scoreOne ++}`
+        all.forEach(button => {
+            button.classList.add('animate__flash')
+        });
         isGameOver = true
         // console.log(winner);
 
@@ -72,10 +76,17 @@ wrapper.addEventListener('click', (e, oneTime) => {
     // Diaganol
     || topLeft.innerHTML.includes('O') && midMid.innerHTML.includes('O') && bottomRight.innerHTML.includes('O') || topRight.innerHTML.includes('O') && midMid.innerHTML.includes('O') && bottomLeft.innerHTML.includes('O')) {
         // alert('player two wins')
-        winner.classList.add('circle')
+        winner.classList.add('circle');
+        winner.classList.add('animate__flash')
         winner.innerText = 'Circle Wins!!'
         circle.innerHTML = `Circle Score: ${scoreTwo++}`
-        scoreTwo.classList.add('circleNumber')
+        // scoreTwo.classList.add('circleNumber')
+        // add a foreach or for... and add a classList.add to each individual node/element :) 
+        all.forEach(button => {
+            button.classList.add('animate__flash')
+        });
+        // all.classList.add('animate__flash')
+        
         isGameOver = true
         // window.location.reload()
     }
@@ -95,6 +106,7 @@ button.addEventListener('click', e => {
         winner.classList.remove('cross')
         isGameOver = false
         console.log(e);
+        e.classList.remove('animate__flash')
         // winner.classList.remove('cross')
         // console.log(winner);
     })
