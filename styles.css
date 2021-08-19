@@ -96,3 +96,9 @@ button:hover {
   animation-duration: 1s;
   /* don't forget to set a duration! */
 }
+
+@media screen and (max-width: 950px) {
+  .wrapper {
+    min-width: 100vw;
+  }
+}
